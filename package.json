@@ -1,0 +1,56 @@
+{
+  "name": "central-bank-of-madagascar-exchange-rate",
+  "version": "1.3.1",
+  "description": "Official Central Bank of Madagascar (BFM) (Madagascar) daily exchange rates — 19 currencies vs MGA, history since 2023. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "bfm",
+    "central",
+    "bank",
+    "of",
+    "madagascar",
+    "(bfm)",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "mga",
+    "central-bank",
+    "official-rates",
+    "madagascar",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/bfm/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/central-bank-of-madagascar-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/central-bank-of-madagascar-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
