@@ -1,6 +1,6 @@
 {
   "name": "central-bank-of-madagascar-exchange-rate",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Official Central Bank of Madagascar (BFM) (Madagascar) daily exchange rates — 19 currencies vs MGA, history since 2023. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "bfm",
