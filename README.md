@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'MGA', { apiKey: 'art_live_...' });
 {
   bank: 'bfm',
   name: 'Central Bank of Madagascar (BFM)',
-  rate_date: '2026-09-24',   // Central Bank of Madagascar (BFM)'s own publication date
+  rate_date: '2026-10-06',   // Central Bank of Madagascar (BFM)'s own publication date
   source: 'USD',
   target: 'MGA',
-  rate: 4400.38,
+  rate: 4465.53,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bfm',
   name: 'Central Bank of Madagascar (BFM)',
-  rate_date: '2026-09-24',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "USD", "quote": "MGA", "type": "reference", "value": 4400.38 },
+    { "base": "USD", "quote": "MGA", "type": "reference", "value": 4465.53 },
     // … the rest of the published table (19 currencies vs MGA)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'central-bank-of-madagascar-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'MGA', from: '2026-01-01', to: '2026-09-24' },
+  { source: 'USD', target: 'MGA', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'MGA',
   from: '2026-01-01',
-  to: '2026-09-24',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-24', rate: 4400.38, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 4465.53, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
