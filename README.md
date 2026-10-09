@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/central-bank-of-madagascar-exchange-rate.svg)](https://github.com/AllRates-Today/central-bank-of-madagascar-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/central-bank-of-madagascar-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/MGA today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbfm%3Fsource%3DUSD%26target%3DMGA&query=%24.rate&label=USD%2FMGA%20published%20by%20Central%20Bank%20of%20Madagascar%20(BFM)&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bfm/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbfm%3Fsource%3DUSD%26target%3DMGA&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bfm/)
 
 **Official Central Bank of Madagascar (BFM) (Madagascar) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Central Bank of Madagascar (BFM) itself prints, every business day.**
 
@@ -32,6 +34,38 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Central Bank of Madagascar (BFM) table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by Central Bank of Madagascar (BFM) — 19 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AUD | MGA | reference | 3120.2 |
+| CAD | MGA | reference | 3150.3 |
+| CHF | MGA | reference | 5391.1 |
+| CNY | MGA | reference | 670.76 |
+| DJF | MGA | reference | 25.25 |
+| DKK | MGA | reference | 672.58 |
+| EUR | MGA | reference | 4954.2 |
+| GBP | MGA | reference | 5934.47 |
+| HKD | MGA | reference | 572.86 |
+| INR | MGA | reference | 46.45 |
+| JPY | MGA | reference | 28.4 |
+| MUR | MGA | reference | 94.61 |
+| NOK | MGA | reference | 468.94 |
+| NZD | MGA | reference | 2511.49 |
+| SEK | MGA | reference | 449.21 |
+| SGD | MGA | reference | 3506.33 |
+| USD | MGA | reference | 4495.64 |
+| XDR | MGA | reference | 6078.98 |
+| ZAR | MGA | reference | 269.77 |
+
+Source: [Official rates published by BFM, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bfm/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
