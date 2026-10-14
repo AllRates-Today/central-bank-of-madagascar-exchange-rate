@@ -42,29 +42,29 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-13** by Central Bank of Madagascar (BFM) — 19 rates. Updated 2026-10-13.
+Published **2026-10-14** by Central Bank of Madagascar (BFM) — 19 rates. Updated 2026-10-14.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | MGA | reference | 3165.34 |
-| CAD | MGA | reference | 3184.73 |
-| CHF | MGA | reference | 5449.56 |
-| CNY | MGA | reference | 677.72 |
-| DJF | MGA | reference | 25.48 |
-| DKK | MGA | reference | 679 |
-| EUR | MGA | reference | 4998.12 |
-| GBP | MGA | reference | 6008.35 |
-| HKD | MGA | reference | 578.04 |
-| INR | MGA | reference | 47.61 |
-| JPY | MGA | reference | 28.68 |
-| MUR | MGA | reference | 95.04 |
-| NOK | MGA | reference | 475.75 |
-| NZD | MGA | reference | 2545.88 |
-| SEK | MGA | reference | 454.36 |
-| SGD | MGA | reference | 3544.55 |
-| USD | MGA | reference | 4536.49 |
-| XDR | MGA | reference | 6139.05 |
-| ZAR | MGA | reference | 275.15 |
+| AUD | MGA | reference | 3185.16 |
+| CAD | MGA | reference | 3197 |
+| CHF | MGA | reference | 5452.38 |
+| CNY | MGA | reference | 678.9 |
+| DJF | MGA | reference | 25.52 |
+| DKK | MGA | reference | 680.56 |
+| EUR | MGA | reference | 5009.39 |
+| GBP | MGA | reference | 6029.54 |
+| HKD | MGA | reference | 578.96 |
+| INR | MGA | reference | 47.75 |
+| JPY | MGA | reference | 28.67 |
+| MUR | MGA | reference | 95.44 |
+| NOK | MGA | reference | 480.11 |
+| NZD | MGA | reference | 2552.67 |
+| SEK | MGA | reference | 455.83 |
+| SGD | MGA | reference | 3542.46 |
+| USD | MGA | reference | 4543.74 |
+| XDR | MGA | reference | 6145.95 |
+| ZAR | MGA | reference | 275.93 |
 
 Source: [Official rates published by BFM, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bfm/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -121,10 +121,10 @@ const pair = await getRate('USD', 'MGA', { apiKey: 'art_live_...' });
 {
   bank: 'bfm',
   name: 'Central Bank of Madagascar (BFM)',
-  rate_date: '2026-10-12',   // Central Bank of Madagascar (BFM)'s own publication date
+  rate_date: '2026-10-13',   // Central Bank of Madagascar (BFM)'s own publication date
   source: 'USD',
   target: 'MGA',
-  rate: 4525.57,
+  rate: 4536.49,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -149,9 +149,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bfm',
   name: 'Central Bank of Madagascar (BFM)',
-  rate_date: '2026-10-12',
+  rate_date: '2026-10-13',
   rates: [
-    { "base": "USD", "quote": "MGA", "type": "reference", "value": 4525.57 },
+    { "base": "USD", "quote": "MGA", "type": "reference", "value": 4536.49 },
     // … the rest of the published table (19 currencies vs MGA)
   ],
   disclaimer: '…'
@@ -191,7 +191,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'central-bank-of-madagascar-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'MGA', from: '2026-01-01', to: '2026-10-12' },
+  { source: 'USD', target: 'MGA', from: '2026-01-01', to: '2026-10-13' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -204,11 +204,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'MGA',
   from: '2026-01-01',
-  to: '2026-10-12',
+  to: '2026-10-13',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-12', rate: 4525.57, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-13', rate: 4536.49, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -327,9 +327,9 @@ getRate('USD', 'MGA', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 
 Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
 
-- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/bfm.csv`)
+- Hugging Face: [AllRatesToday/central-bank-exchange-rates](https://huggingface.co/datasets/AllRatesToday/central-bank-exchange-rates) — one CSV per institution (`rates/bfm.csv`)
 - Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
-- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/bfm/latest.json`
+- Raw JSON on GitHub: `https://raw.githubusercontent.com/AllRates-Today/central-bank-exchange-rates/main/data/bfm/latest.json`
 
 ## 🔗 Links
 
