@@ -42,29 +42,29 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-15** by Central Bank of Madagascar (BFM) — 19 rates. Updated 2026-10-15.
+Published **2026-10-16** by Central Bank of Madagascar (BFM) — 19 rates. Updated 2026-10-16.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | MGA | reference | 3145.65 |
-| CAD | MGA | reference | 3203.91 |
-| CHF | MGA | reference | 5481.48 |
-| CNY | MGA | reference | 680.16 |
-| DJF | MGA | reference | 25.56 |
-| DKK | MGA | reference | 682.45 |
-| EUR | MGA | reference | 5021.49 |
-| GBP | MGA | reference | 6029.39 |
-| HKD | MGA | reference | 579.93 |
-| INR | MGA | reference | 47.88 |
-| JPY | MGA | reference | 28.81 |
-| MUR | MGA | reference | 96.22 |
-| NOK | MGA | reference | 478.61 |
-| NZD | MGA | reference | 2549.24 |
-| SEK | MGA | reference | 456.4 |
-| SGD | MGA | reference | 3547.29 |
-| USD | MGA | reference | 4551 |
-| XDR | MGA | reference | 6156.76 |
-| ZAR | MGA | reference | 274.94 |
+| AUD | MGA | reference | 3173.74 |
+| CAD | MGA | reference | 3223.98 |
+| CHF | MGA | reference | 5542.32 |
+| CNY | MGA | reference | 682.24 |
+| DJF | MGA | reference | 25.62 |
+| DKK | MGA | reference | 686.84 |
+| EUR | MGA | reference | 5037.04 |
+| GBP | MGA | reference | 6082.22 |
+| HKD | MGA | reference | 581.22 |
+| INR | MGA | reference | 48.03 |
+| JPY | MGA | reference | 28.86 |
+| MUR | MGA | reference | 96.58 |
+| NOK | MGA | reference | 483.44 |
+| NZD | MGA | reference | 2583.7 |
+| SEK | MGA | reference | 460.58 |
+| SGD | MGA | reference | 3565.85 |
+| USD | MGA | reference | 4561.61 |
+| XDR | MGA | reference | 6176.42 |
+| ZAR | MGA | reference | 277.37 |
 
 Source: [Official rates published by BFM, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bfm/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
