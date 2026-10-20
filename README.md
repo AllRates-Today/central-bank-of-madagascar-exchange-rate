@@ -20,6 +20,10 @@
 
 > **Official rate, not mid-market:** every value here is a number Central Bank of Madagascar (BFM) itself published, fixed once printed and carrying the central bank's own `rate_date` — what filings and audits require. Need the live mid-market rate for pricing or display instead? Use the [mid-market API](https://allratestoday.com/docs/) or [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk). The two can diverge by several percent.
 
+## 🔑 Get your API key
+
+Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
+
 ## ⚡ Try it without a key
 
 The latest Central Bank of Madagascar (BFM) table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
@@ -43,38 +47,34 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-19 by Central Bank of Madagascar (BFM) — 19 rates. Updated 2026-10-19.</summary>
+<summary>Table as text: published 2026-10-20 by Central Bank of Madagascar (BFM) — 19 rates. Updated 2026-10-20.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | MGA | reference | 3193.14 |
-| CAD | MGA | reference | 3246.63 |
-| CHF | MGA | reference | 5539.32 |
-| CNY | MGA | reference | 684.17 |
-| DJF | MGA | reference | 25.67 |
-| DKK | MGA | reference | 686.53 |
-| EUR | MGA | reference | 5050.02 |
-| GBP | MGA | reference | 6093.98 |
-| HKD | MGA | reference | 582.39 |
-| INR | MGA | reference | 48.15 |
-| JPY | MGA | reference | 28.88 |
-| MUR | MGA | reference | 96.74 |
-| NOK | MGA | reference | 485.95 |
-| NZD | MGA | reference | 2591.63 |
-| SEK | MGA | reference | 461.87 |
-| SGD | MGA | reference | 3573.29 |
-| USD | MGA | reference | 4570.77 |
-| XDR | MGA | reference | 6200.08 |
-| ZAR | MGA | reference | 277.88 |
+| AUD | MGA | reference | 3198.58 |
+| CAD | MGA | reference | 3257.95 |
+| CHF | MGA | reference | 5559.2 |
+| CNY | MGA | reference | 685.61 |
+| DJF | MGA | reference | 25.71 |
+| DKK | MGA | reference | 686.9 |
+| EUR | MGA | reference | 5051.22 |
+| GBP | MGA | reference | 6109.86 |
+| HKD | MGA | reference | 583.36 |
+| INR | MGA | reference | 48.23 |
+| JPY | MGA | reference | 28.95 |
+| MUR | MGA | reference | 96.88 |
+| NOK | MGA | reference | 487.89 |
+| NZD | MGA | reference | 2600.39 |
+| SEK | MGA | reference | 461.74 |
+| SGD | MGA | reference | 3581.48 |
+| USD | MGA | reference | 4578.56 |
+| XDR | MGA | reference | 6203.35 |
+| ZAR | MGA | reference | 278.04 |
 
 </details>
 
 Source: [Official rates published by BFM, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bfm/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
-
-## 🔑 Get your API key
-
-Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
 ## 📦 Installation
 
