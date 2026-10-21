@@ -37,7 +37,7 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/bfm').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
 
 ## 📈 Latest published table
 
@@ -47,29 +47,29 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-20 by Central Bank of Madagascar (BFM) — 19 rates. Updated 2026-10-20.</summary>
+<summary>Table as text: published 2026-10-21 by Central Bank of Madagascar (BFM) — 19 rates. Updated 2026-10-21.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | MGA | reference | 3198.58 |
-| CAD | MGA | reference | 3257.95 |
-| CHF | MGA | reference | 5559.2 |
-| CNY | MGA | reference | 685.61 |
-| DJF | MGA | reference | 25.71 |
-| DKK | MGA | reference | 686.9 |
-| EUR | MGA | reference | 5051.22 |
-| GBP | MGA | reference | 6109.86 |
-| HKD | MGA | reference | 583.36 |
-| INR | MGA | reference | 48.23 |
-| JPY | MGA | reference | 28.95 |
-| MUR | MGA | reference | 96.88 |
-| NOK | MGA | reference | 487.89 |
-| NZD | MGA | reference | 2600.39 |
-| SEK | MGA | reference | 461.74 |
-| SGD | MGA | reference | 3581.48 |
-| USD | MGA | reference | 4578.56 |
-| XDR | MGA | reference | 6203.35 |
-| ZAR | MGA | reference | 278.04 |
+| AUD | MGA | reference | 3223.73 |
+| CAD | MGA | reference | 3263.02 |
+| CHF | MGA | reference | 5559.23 |
+| CNY | MGA | reference | 686.74 |
+| DJF | MGA | reference | 25.75 |
+| DKK | MGA | reference | 688.77 |
+| EUR | MGA | reference | 5046.23 |
+| GBP | MGA | reference | 6141.89 |
+| HKD | MGA | reference | 584.24 |
+| INR | MGA | reference | 48.53 |
+| JPY | MGA | reference | 29.03 |
+| MUR | MGA | reference | 96.91 |
+| NOK | MGA | reference | 489.77 |
+| NZD | MGA | reference | 2609.38 |
+| SEK | MGA | reference | 463.63 |
+| SGD | MGA | reference | 3589.23 |
+| USD | MGA | reference | 4584.7 |
+| XDR | MGA | reference | 6210.68 |
+| ZAR | MGA | reference | 279.19 |
 
 </details>
 
