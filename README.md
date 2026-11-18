@@ -32,29 +32,29 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-17 by Central Bank of Madagascar (BFM) — 19 rates. Updated 2026-11-17.</summary>
+<summary>Table as text: published 2026-11-18 by Central Bank of Madagascar (BFM) — 19 rates. Updated 2026-11-18.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | MGA | reference | 3079.92 |
-| CAD | MGA | reference | 3195.38 |
-| CHF | MGA | reference | 5437.84 |
-| CNY | MGA | reference | 685.36 |
+| AUD | MGA | reference | 3073.89 |
+| CAD | MGA | reference | 3193.07 |
+| CHF | MGA | reference | 5421.3 |
+| CNY | MGA | reference | 685.37 |
 | DJF | MGA | reference | 25.66 |
-| DKK | MGA | reference | 671.73 |
-| EUR | MGA | reference | 4975.47 |
-| GBP | MGA | reference | 6026.21 |
-| HKD | MGA | reference | 582.27 |
-| INR | MGA | reference | 48.88 |
-| JPY | MGA | reference | 28.69 |
-| MUR | MGA | reference | 95.46 |
-| NOK | MGA | reference | 474.22 |
-| NZD | MGA | reference | 2512.04 |
-| SEK | MGA | reference | 451.72 |
-| SGD | MGA | reference | 3545.26 |
-| USD | MGA | reference | 4568.6 |
-| XDR | MGA | reference | 6147.28 |
-| ZAR | MGA | reference | 270 |
+| DKK | MGA | reference | 670.03 |
+| EUR | MGA | reference | 4965.31 |
+| GBP | MGA | reference | 6011.17 |
+| HKD | MGA | reference | 582.28 |
+| INR | MGA | reference | 48.89 |
+| JPY | MGA | reference | 28.67 |
+| MUR | MGA | reference | 95.28 |
+| NOK | MGA | reference | 471.78 |
+| NZD | MGA | reference | 2510.1 |
+| SEK | MGA | reference | 449.64 |
+| SGD | MGA | reference | 3541.84 |
+| USD | MGA | reference | 4568.8 |
+| XDR | MGA | reference | 6144.98 |
+| ZAR | MGA | reference | 265.71 |
 
 </details>
 
